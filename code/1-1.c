@@ -6,12 +6,13 @@ struct S1 {
     long long l;
 };
 
+#pragma pack(push, 1)
 struct S2 {
     char c;
     int i;
     long long l;
-}___attribute___((packed));
-// #pragma pack(1)
+};
+#pragma pack(pop)
 
 int main() {
     struct S1 s1;
