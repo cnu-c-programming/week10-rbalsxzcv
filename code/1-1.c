@@ -10,8 +10,8 @@ struct S2 {
     char c;
     int i;
     long long l;
-};
-#pragma pack(1)
+}___attribute___((packed));
+// #pragma pack(1)
 
 int main() {
     struct S1 s1;
